@@ -1,0 +1,43 @@
+.staff {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-bottom: -80px;
+}
+
+.staff__image {
+    margin-bottom: 45px;
+    display: block;
+    max-width: 100%;
+}
+
+.staff__caption {
+    transform: translateY(-80px);
+    background-color: #fff;
+    width: 80%;
+    padding: 15px;
+}
+
+.staff__name {
+    color: $blue;
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    @include media-breakpoint-up(md) {
+        font-size: 18px;
+    }
+}
+
+.staff__position {
+    color: #000;
+    font-size: 14px;
+    font-family: "Gotham", sans-serif;
+    font-weight: 300;
+
+    @include media-breakpoint-up(md) {
+        font-size: 15px;
+    }
+}

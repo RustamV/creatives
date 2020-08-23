@@ -1,0 +1,20 @@
+.navigation {
+
+}
+
+.navigation__list {
+    display: flex;
+}
+
+.navigation__item {
+    padding: 45px 15px;
+}
+
+.navigation__link {
+    color: #fff;
+    font-size: 20px;
+    font-family: "Gotham", sans-serif;
+    font-weight: 300;
+    pointer-events: none;
+    z-index: -10;
+}

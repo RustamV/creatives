@@ -1,0 +1,40 @@
+.hidden-menu {
+    position: absolute;
+    width: 100%;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    right: 0;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform: translate(0, -150%);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    z-index: 9;
+    display: block;
+
+    &.active {
+        transform: translate(0, 0);
+    }
+
+    @include media-breakpoint-up(lg) {
+        display: none;
+    }
+}
+
+.hidden-menu__item {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+.hidden-menu__link {
+    color: #232323;
+    font-size: 14px;
+    font-family: "Gotham", sans-serif;
+    font-weight: 300;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: tomato;
+    }
+}

@@ -1,0 +1,139 @@
+.mobile {
+    background-image: url(../../images/background/mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 30px 0;
+    
+    @include media-breakpoint-up(sm) {
+        padding: 45px 0;
+    }
+
+    @include media-breakpoint-up(md) {
+        padding: 90px 0;
+    }
+}
+
+.mobile__row {
+    @include make-row();
+}
+
+.mobile__column {
+    @include make-col(1, 1);
+    padding: 0 15px;
+    margin-bottom: 25px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include media-breakpoint-up(md) {
+        @include make-col(1, 2);
+    }
+}
+
+.mobile__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 20px;
+
+    @include media-breakpoint-up(md) {
+        align-items: flex-start;
+        margin-bottom: 0px;
+    }
+}
+
+.mobile__image {
+    display: flex;
+    justify-content: center;
+}
+
+.mobile__title {
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: 500;
+
+    @include media-breakpoint-up(md) {
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 24px;
+    }
+}
+
+.mobile__text {
+    color: #fff;
+    font-size: 14px;
+    font-family: "Gotham", sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+    width: 80%;
+    text-align: center;
+    
+    @include media-breakpoint-up(md) {
+        font-size: 15px;
+        margin-bottom: 50px;
+        text-align: start;
+    }
+}
+
+.mobile__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include media-breakpoint-up(md) {
+        align-items: flex-start;
+    }
+}
+
+.mobile__advantage {
+    padding: 10px 20px;
+    background-color: $blue;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    display: inline-block;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: 16px;
+        &:nth-child(1){
+            width: 85%;
+        }
+        &:nth-child(2){
+            width: 90%;
+        }
+        &:nth-child(3){
+            width: 95%;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 18px;
+        &:nth-child(1){
+            width: 70%;
+        }
+        &:nth-child(2){
+            width: 75%;
+        }
+        &:nth-child(3){
+            width: 80%;
+        }
+    }
+}
+
+.mobile__image img {
+    display: block;
+    max-width: 100%;
+}

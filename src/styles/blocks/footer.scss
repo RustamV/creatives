@@ -1,0 +1,33 @@
+.footer {
+    background-color: $text-black;
+    padding: 40px 0;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @include media-breakpoint-up(md) {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.footer__rights {
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    margin-bottom: 10px;
+
+    @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+    }
+}
+
+.footer__author {
+    max-width: 100%;
+    display: block;
+}

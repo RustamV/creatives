@@ -1,0 +1,91 @@
+.title {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    height: 45px;
+    
+    @include media-breakpoint-up(sm) {
+        height: 85px;
+    }
+
+    @include media-breakpoint-up(md) {
+        height: 125px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        height: 175px;
+    }
+}
+
+.title__text {
+    font-size: 20px;
+    line-height: 25px;
+    color: #fff;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    @include media-breakpoint-up(sm) {
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 37px;
+        line-height: 45px;
+    }
+}
+
+.title__back {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $light-blue;
+    line-height: 45px;
+    
+    @include media-breakpoint-up(sm) {
+        font-size: 120px;
+        line-height: 65px;
+    }
+
+    @include media-breakpoint-up(md) {
+        font-size: 175px;
+        line-height: 100px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: 240px;
+        line-height: 175px;
+    }
+}
+
+.title--dark {
+    .title__text {
+        color: $text-black;
+    }
+    .title__back {
+        color: $title-back;
+    }
+}
+
+.title--light {
+    .title__text {
+        color: #fff;
+    }
+    .title__back {
+        color: $title-back;
+        opacity: 0.5;
+    }
+}
