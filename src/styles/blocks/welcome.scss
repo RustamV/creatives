@@ -9,13 +9,24 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    height: calc(100vh - 60px);
     position: relative;
+
+    @include media-breakpoint-up(md) {
+        height: calc(100vh - 115px);
+    }
 }
 
 .welcome__center {
     width: 100%;
     text-align: center;
+    transform: translateY(-60px);
+    margin-bottom: -60px;
+
+    @include media-breakpoint-up(md) {
+        transform: translateY(-115px);
+        margin-bottom: -115px;
+    }
 }
 
 .welcome__title {
@@ -62,12 +73,16 @@
 
 .welcome__bottom {
     position: absolute;
-    bottom: 100px;
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @include media-breakpoint-up(md) {
+        bottom: 100px;
+    }
 }
 
 .welcome__scroll {

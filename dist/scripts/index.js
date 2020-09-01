@@ -1,1 +1,1 @@
-"use strict";(window.document.onload=function(){var e=document.querySelector(".hamburger input[type=checkbox]"),c=document.querySelector(".hidden-menu");console.log("ss"),e.addEventListener("change",(function(){e.checked?(console.log("ss"),c.classList.toggle("active")):c.classList.toggle("active")}))})();
+"use strict";(window.document.onload=function(){var e=document.querySelector(".hamburger input[type=checkbox]"),t=document.querySelector(".hidden-menu");e.addEventListener("change",(function(){e.checked,t.classList.toggle("active")}))})();

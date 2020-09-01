@@ -109,26 +109,26 @@
     @include media-breakpoint-up(md) {
         font-size: 16px;
         &:nth-child(1){
-            width: 85%;
+            width: 115%;
         }
         &:nth-child(2){
-            width: 90%;
+            width: 120%;
         }
         &:nth-child(3){
-            width: 95%;
+            width: 125%;
         }
     }
 
     @include media-breakpoint-up(lg) {
         font-size: 18px;
         &:nth-child(1){
-            width: 70%;
+            width: 100%;
         }
         &:nth-child(2){
-            width: 75%;
+            width: 105%;
         }
         &:nth-child(3){
-            width: 80%;
+            width: 110%;
         }
     }
 }
